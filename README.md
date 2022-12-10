@@ -6,7 +6,7 @@ A game scene flow like this:
 
 Can be described by a Finite State Machine as a set of states and messages between them:
 
-<img src="demo.png" alt="drawing" width="600"/>
+<img src="demo.png" alt="drawing" width="800"/>
 
 In the Swift code, each state is represented by a key in a dictionary.
 Another sub-dictionary describes the next state given a specific message.
