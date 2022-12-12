@@ -11,6 +11,8 @@
 		CF1031A2293C624D00E0F0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031A1293C624D00E0F0C0 /* ViewController.swift */; };
 		CF1031A7293C624E00E0F0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1031A6293C624E00E0F0C0 /* Assets.xcassets */; };
 		CF1031AA293C624E00E0F0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1031A8293C624E00E0F0C0 /* LaunchScreen.storyboard */; };
+		CF36745E2944E71700A79711 /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF36745D2944E71700A79711 /* Actionable.swift */; };
+		CF3674602944E83900A79711 /* SimpleTraficLightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF36745F2944E83900A79711 /* SimpleTraficLightController.swift */; };
 		CFE38D22293D692500A5B034 /* 30-room2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE38D1A293D692500A5B034 /* 30-room2.png */; };
 		CFE38D23293D692500A5B034 /* 40-stairs.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE38D1B293D692500A5B034 /* 40-stairs.png */; };
 		CFE38D24293D692500A5B034 /* 50-spider.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE38D1C293D692500A5B034 /* 50-spider.png */; };
@@ -28,6 +30,8 @@
 		CF1031A6293C624E00E0F0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1031A9293C624E00E0F0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1031AB293C624E00E0F0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF36745D2944E71700A79711 /* Actionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actionable.swift; sourceTree = "<group>"; };
+		CF36745F2944E83900A79711 /* SimpleTraficLightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTraficLightController.swift; sourceTree = "<group>"; };
 		CFE38D1A293D692500A5B034 /* 30-room2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30-room2.png"; sourceTree = "<group>"; };
 		CFE38D1B293D692500A5B034 /* 40-stairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-stairs.png"; sourceTree = "<group>"; };
 		CFE38D1C293D692500A5B034 /* 50-spider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50-spider.png"; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				CF1031A6293C624E00E0F0C0 /* Assets.xcassets */,
 				CF1031A8293C624E00E0F0C0 /* LaunchScreen.storyboard */,
 				CF1031AB293C624E00E0F0C0 /* Info.plist */,
+				CF36745D2944E71700A79711 /* Actionable.swift */,
+				CF36745F2944E83900A79711 /* SimpleTraficLightController.swift */,
 			);
 			path = StateMachineTest;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF36745E2944E71700A79711 /* Actionable.swift in Sources */,
+				CF3674602944E83900A79711 /* SimpleTraficLightController.swift in Sources */,
 				CF1031A2293C624D00E0F0C0 /* ViewController.swift in Sources */,
 				CF10319E293C624D00E0F0C0 /* AppDelegate.swift in Sources */,
 			);
