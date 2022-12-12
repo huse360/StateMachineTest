@@ -7,7 +7,7 @@
 
 import UIKit
 
-typealias Action = () -> Void
+
 
 class ViewController: UIViewController {
 
@@ -142,16 +142,63 @@ class ViewController: UIViewController {
     var states : [StateID : Action] = [:]
     var currentState : StateID = .desert
     ///  bgcolor = gray12
-    /// node [fontcolor = white];
-    /// node [color = yellow];
-    /// edge [fontcolor = orange]
+    //Red gray
+    /// node [color = "#d90429"];
+    /// node [fontcolor = "#ef233c"]
+
+    /// edge [color = "#8d99ae"]
+    /// edge [fontcolor = "#2b2d42"]
     
+    ///Red dark blue
+    /// node [color = "#d62828"];
+    /// node [fontcolor = "#003049"]
+
+    /// edge [color = "#fcbf49"]
+    /// edge [fontcolor = "#f77f00"]
+    
+    ///Black brown
+    /// node [color = "#000000"];
+    /// node [fontcolor = "#282A3A"]
+
+    /// edge [color = "#C69749"]
+    /// edge [fontcolor = "#735F32"]
+    
+    /// dual red blue
+    /// node [color = "#D61C4E"];
+    /// node [fontcolor = "#293462"]
+
+    /// edge [color = "#293462"]
+    /// edge [fontcolor = "#D61C4E"]
+    
+    /// joyfull
+    /// node [style = filled]
+    /// node [fillcolor = "#FF5F00"];
+    /// node [color = "#B20600"];
+    /// node [fontcolor = white]
+    /// node [penwidth = 4.2]
+
+    /// edge [color = "#B20600"]
+    /// edge [fontcolor = black]
+
     ///#Dot
-    /// 
+
+    /// layout="dot";
+
+    /// nodesep = 2;
+    /// minlen = 100;
     /// start = 13;
-    /// node [shape=circle];
-    /// edge [len=5];
-    /// node [color = magenta];
+    /// node [shape = egg];
+    /// edge [len=4.5];
+    /// edge [penwidth = 2.2]
+
+    /// node [color = "#AEB6BF"];
+    /// node [fontcolor = "#D35400"]
+    /// node [orientation = 90]
+
+    /// edge [color = "#CCD1D1"]
+    /// edge [fontcolor = "#3498DB"]
+
+
     
     ///#EndDot
 
@@ -159,7 +206,7 @@ class ViewController: UIViewController {
         ///#States
         machine[.desert] = [
             .openDoor : .room1,
-            .digMore : .stairs
+            .digMore : .stairs,
         ]
         machine[.room1] = [
             .hallway : .room2,
@@ -170,28 +217,28 @@ class ViewController: UIViewController {
             .hallway : .room1,
             .sitInChair : .treasure,
             .openDoor : .spider
+
         ]
         machine[.stairs] = [
             .openDoor : .room1,
             .goDown : .room3
+
         ]
         machine[.spider] = [
             .openRightDoor : .room2,
             .openLeftDoor : .room1
         ]
-        machine[.lava] = [
-            .goBack : .room3,
-            
-        ]
+        
         machine[.room3] = [
-            .openDoor : .lava,
+           .openDoor : .lava,
             .goUp : .room1
         ]
-
+        machine[.lava] = [
+            .goBack : .room3,        
+        ]
         machine[.treasure] = [
             :
         ]
-        
         ///#EndStates
     }
     
